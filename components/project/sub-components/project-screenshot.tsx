@@ -28,15 +28,16 @@ const ProjectScreenShot: FC<ProjectScreenShotProps> = ({
                 <div className="absolute -left-[17px] top-[178px] h-[46px] w-[3px] rounded-l-lg bg-gray-800"></div>
                 <div className="absolute -right-[17px] top-[142px] h-[64px] w-[3px] rounded-r-lg bg-gray-800"></div>
                 <div className="h-[520px] w-[272px] overflow-hidden rounded-[2rem] bg-white dark:bg-gray-800">
-                  <Image
+                <Image
                     src={screenshot}
                     alt="Screenshot"
+                    layout="responsive"
                     width={272}
                     height={520}
                     placeholder={`data:image/svg+xml;base64,${toBase64(
                       shimmer(256, 256),
                     )}`}
-                    className="h-[520px] w-[272px] object-contain object-center"
+                    className="object-contain object-center"
                   />
                 </div>
               </div>
@@ -45,7 +46,8 @@ const ProjectScreenShot: FC<ProjectScreenShotProps> = ({
           ) : (
             <Image
               src={screenshot}
-              className="object-fit h-[520px] w-[430px] rounded-xl sm:object-cover"
+              className="object-fit rounded-xl sm:object-cover"
+              layout="responsive"
               width={430}
               height={520}
               alt="Screenshot"
