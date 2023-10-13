@@ -1,0 +1,233 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer components {
+  .text-highlight-sky {
+    display: inline-block;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    border-left: 4px solid #0ea5e9;
+    border-radius: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgba(56, 189, 248, 0.2),
+      rgba(125, 211, 252, 0.05)
+    );
+    line-height: 1;
+  }
+  .text-highlight-orange {
+    display: inline-block;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    border-left: 4px solid #ff7448;
+    border-radius: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgba(251, 146, 60, 0.2),
+      rgba(253, 186, 116, 0.05)
+    );
+    line-height: 1;
+  }
+  .text-highlight-blue {
+    display: inline-block;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    border-left: 4px solid #3b82f6;
+    border-radius: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgba(59, 130, 246, 0.2),
+      rgba(125, 171, 245, 0.05)
+    );
+    line-height: 1;
+  }
+  .text-highlight-rose {
+    display: inline-block;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    border-left: 4px solid #f43f5e;
+    border-radius: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgba(251, 113, 133, 0.2),
+      rgba(254, 205, 211, 0.05)
+    );
+    line-height: 1;
+  }
+
+  .text-highlight-green {
+    display: inline-block;
+    padding-right: 0.25rem;
+    padding-left: 0.25rem;
+    border-left: 4px solid #22c55e;
+    border-radius: 0;
+    background-image: linear-gradient(
+      90deg,
+      rgba(74, 222, 128, 0.2),
+      rgba(134, 239, 172, 0.05)
+    );
+    line-height: 1;
+  }
+  .ring-trisma {
+    box-shadow: 0 0 0 0.5px #e4e4e7, 0 0 0 1px hsla(240, 6%, 90%, 0.5),
+      0 0 0 5.5px #f4f4f5, 0 0 0 4px #efeff4,
+      0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.005);
+  }
+  .ring-dark-trisma {
+    box-shadow: 0 0 0 0.5px #1e293b, 0 0 0 1px hsla(223, 36%, 17%, 0.5),
+      0 0 0 5.5px #29364a, 0 0 0 4px #28364e,
+      0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.005);
+  }
+
+  .layout {
+    display: block;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow-x: hidden;
+  }
+
+  body {
+    height: 100vh;
+  }
+
+  /* Avoid Chrome to see Safari hack */
+  @supports (-webkit-touch-callout: none) {
+    body {
+      /* The hack for Safari */
+      height: -webkit-fill-available;
+    }
+  }
+  @supports (-webkit-touch-callout: none) {
+    .h-screen {
+      height: -webkit-fill-available;
+    }
+  }
+  .ring-card {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+      var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+      calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+      var(--tw-shadow, 0 0 #0000);
+    --tw-ring-color: rgba(51, 65, 85, 0.1);
+  }
+  .ring-card-dark {
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
+      var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
+      calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
+      var(--tw-shadow, 0 0 #1e293b);
+    --tw-ring-color: rgba(51, 65, 85, 0.1);
+  }
+  .shadow-card {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+      0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+      var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    --tw-shadow-color: rgba(0, 0, 0, 0.05);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+  .shadow-card-dark {
+    --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+      0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
+      0 8px 10px -6px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #1e293b),
+      var(--tw-ring-shadow, 0 0 #1e293b), var(--tw-shadow);
+    --tw-shadow-color: rgba(0, 0, 0, 0.05);
+    --tw-shadow: var(--tw-shadow-colored);
+  }
+}
+
+.ut-hidden {
+  @apply hidden;
+}
+.ut-bg-blue-600 {
+  @apply flex h-10 w-36 cursor-pointer items-center justify-center rounded-md bg-blue-600 hover:bg-blue-500;
+}
+
+.ut-text-white {
+  @apply text-white;
+}
+
+.ut-text-xs {
+  @apply text-center text-xs leading-5 text-gray-600;
+}
