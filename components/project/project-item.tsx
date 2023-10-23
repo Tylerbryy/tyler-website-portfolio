@@ -9,12 +9,13 @@ import {
   ProjectHeader,
   ProjectLine,
   ProjectScreenShot,
+  ProjectVideo
 } from "./sub-components"
-import { Project } from "contentlayer/generated"
+import { Project as ProjectType } from "contentlayer/generated"
 import {v4} from "uuid"
 
 interface ProjectProps {
-  project: Project,
+  project: ProjectType,
   line: boolean
 }
 
@@ -24,6 +25,8 @@ const Project: FC<ProjectProps> = ({
 }) => {
 
 console.log("Type :", project.type)
+
+const isVideo = project.screenshot.endsWith('.mp4') || project.screenshot.includes('youtube.com/embed');
 
   return (
     <>
@@ -37,7 +40,11 @@ console.log("Type :", project.type)
               <ProjectHeader title={project.title} category={project.category} tags={project?.tags ? project?.tags : []} icon={project.icon ? project.icon : ""} />
               <ProjectFeatures features={project.features} category={project.category} />
             </div>
-            <ProjectScreenShot category={project.category} screenshot={project.screenshot ? project.screenshot : ""} />
+            {isVideo ? (
+              <ProjectVideo video={project.screenshot} category={project.category} />
+            ) : (
+              <ProjectScreenShot screenshot={project.screenshot} category={project.category} />
+            )}
           </ProjectContainer>
         </ProjectBrowser>
       </div>
