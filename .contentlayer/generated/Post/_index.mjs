@@ -2,5 +2,6 @@
 
 import posts__deployingNextAppsMdx from './posts__deploying-next-apps.mdx.json' assert { type: 'json' }
 import posts__ollamaTutorialMdx from './posts__ollama-tutorial.mdx.json' assert { type: 'json' }
+import posts__aiFaceSwapperBlodMdx from './posts__ai-face-swapper-blod.mdx.json' assert { type: 'json' }
 
-export const allPosts = [posts__deployingNextAppsMdx, posts__ollamaTutorialMdx]
+export const allPosts = [posts__deployingNextAppsMdx, posts__ollamaTutorialMdx, posts__aiFaceSwapperBlodMdx]
