@@ -1,0 +1,69 @@
+---
+title: 'Getting Started with MLX on Apple Silicon'
+description: 'Explore the capabilities of MLX, a machine learning framework optimized for Apple silicon, and learn how to set it up on your Mac Studio.'
+date: '2023-12-23'
+category: 'Machine Learning'
+image: /images/blogs/mlx-apple.jpg
+imageCaption: 'MLX on Apple Silicon'
+author: { name: "Tyler", image: "/images/authors/Tyler.jpg", twitter: "@tylerbryy" }
+tags:
+  - MLX
+  - Machine Learning
+  - Apple Silicon
+  - Tutorial
+  - Framework
+---
+
+## Introduction
+
+MLX is a specialized framework for machine learning, specifically designed for use with Apple's silicon chips, and is a product of Apple's machine learning research efforts. The primary aim of MLX is to offer a user-friendly yet efficient platform for both training and deploying various machine learning models. With a design that emphasizes simplicity, it encourages researchers to easily contribute and innovate within its structure. MLX takes inspiration from renowned frameworks such as NumPy, PyTorch, Jax, and ArrayFire, and is capable of supporting large language models like StableDiffusion, Whisper, and others on Apple silicon devices.
+
+## Setting up MLX
+The following steps outline the installation process of MLX on a Mac Studio (Apple M1 Ultra), which requires Xcode and conda.
+
+### Build Requirements
+
+- A C++ compiler supporting C++17 (e.g., Clang >= 5.0)
+- cmake (version 3.24 or later), and make
+- Xcode >= 14.3 (or Xcode >= 15.0 for MacOS 14 and above)
+
+### Installation Commands
+
+- Clone the MLX repository: `git clone https://github.com/ml-explore/mlx`
+- Navigate to the mlx directory: `cd mlx`
+- Create and navigate to the build directory: `mkdir -p build && cd build`
+- Create a conda environment: `conda create -n mlx python=3.10`
+- Activate the environment: `conda activate mlx`
+- Install dependencies: `conda install pybind11` and `conda install pytorch torchvision torchaudio -c pytorch`
+- Install with CMake: `env CMAKE_BUILD_PARALLEL_LEVEL="" pip install -e .`, `cmake .. && make -j`, `make test`, `make install`
+For complete installation details, visit https://ml-explore.github.io/mlx/build/html/install.html.
+
+## MLX Examples
+After installing MLX, you can explore its capabilities with various examples.
+
+### For Large Language Models (LLM)
+
+- Clone the examples repository: `git clone https://github.com/ml-explore/mlx-examples.git`
+- Navigate to the mistral directory: `cd mlx-examples/mistral`
+- Install requirements: `pip install -r requirements.txt`
+- Download and prepare the mistral model:
+```bash
+curl -O https://files.mistral-7b-v0-1.mistral.ai/mistral-7B-v0.1.tar
+tar -xf mistral-7B-v0.1.tar
+python convert.py
+```
+- Use the LLM with: `python mistral.py --prompt "Your prompt here" --temp 0`
+
+### For Whisper
+
+- Navigate to the whisper directory: `cd ../whisper`
+- Create and run a Python script to transcribe audio to text.
+
+### For StableDiffusion 2.1
+
+- The first execution will download the necessary weights from the Huggingface Hub (requires a HuggingFace token).
+- Generate images using: `python txt2image.py "Your image prompt"`
+
+Enjoy exploring MLX on your Apple silicon device!
+---
+
