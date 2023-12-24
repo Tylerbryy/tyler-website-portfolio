@@ -7,7 +7,7 @@ const nextConfig = {
     serverActions: true,
   },
   images: {
-    domains: ["avatars.githubusercontent.com"],
+    domains: ["avatars.githubusercontent.com", 'covers.openlibrary.org'],
     remotePatterns: [
       {
         protocol: "https",

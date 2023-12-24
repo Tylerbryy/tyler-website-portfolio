@@ -1,8 +1,31 @@
-import React from 'react';
+"use client"
 
-// app/(pages)/books/BooksList.tsx
-const BooksList = ({ booksData }) => {
-  const renderBookSection = (sectionTitle, books) => {
+import React from 'react';
+import Image from 'next/image';
+
+// Define a type for your book data
+type Book = {
+  title: string;
+  isbn?: string;
+  book_id: string;
+  author: string;
+};
+
+// Define a type for the booksData prop
+type BooksData = {
+  read: Book[];
+  'currently-reading': Book[];
+  'to-read': Book[];
+};
+
+const BooksList = ({ booksData }: { booksData: BooksData }) => {
+  // Function to construct the cover URL
+  const getCoverUrl = (isbn: string, size: 'S' | 'M' | 'L' = 'M'): string => {
+    return `https://covers.openlibrary.org/b/isbn/${isbn}-${size}.jpg?default=false`;
+  };
+
+  // Function to render each book section
+  const renderBookSection = (sectionTitle: string, books: Book[]) => {
     return (
       <section aria-labelledby={`${sectionTitle.replace(/\s+/g, '-').toLowerCase()}-heading`}>
         <h2 id={`${sectionTitle.replace(/\s+/g, '-').toLowerCase()}-heading`} className="text-xl font-bold my-4">
@@ -11,13 +34,25 @@ const BooksList = ({ booksData }) => {
         <div className="grid gap-8 px-5 sm:grid-cols-1 md:grid-cols-3 md:px-0">
           {books.map((book) => (
             <a
-              key={book.title}
+              key={book.book_id}
               className="block rounded-xl bg-white p-8 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-md dark:bg-slate-700/50 dark:shadow-white/5 dark:ring-white/10"
-              href={`https://www.goodreads.com/book/show/${book.book_id}`}
+              href={`https://openlibrary.org/isbn/${book.isbn}`}
               aria-label={book.title}
-              target="_blank" // Open in new tab
-              rel="noopener noreferrer" // Security for opening links in a new tab
+              target="_blank"
+              rel="noopener noreferrer"
             >
+              {book.isbn && (
+                
+                <Image
+                  src={getCoverUrl(book.isbn)}
+                  alt={`Cover of ${book.title}`}
+                  layout="intrinsic"
+                  className="rounded-t-lg"
+                  width={500}
+                  height={500}
+                />
+                
+              )}
               <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300">
                 {book.title}
               </h3>
@@ -31,6 +66,7 @@ const BooksList = ({ booksData }) => {
     );
   };
 
+  // Main component render
   return (
     <>
       {renderBookSection("Books I've Read", booksData.read)}
