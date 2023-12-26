@@ -20,7 +20,7 @@ type BooksData = {
 
 const BooksList = ({ booksData }: { booksData: BooksData }) => {
   // Function to construct the cover URL
-  const getCoverUrl = (isbn: string, size: 'S' | 'M' | 'L' = 'M'): string => {
+  const getCoverUrl = (isbn: string, size: 'S' | 'M' | 'L' = 'L'): string => {
     return `https://covers.openlibrary.org/b/isbn/${isbn}-${size}.jpg?default=false`;
   };
 
