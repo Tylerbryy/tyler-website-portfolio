@@ -2,7 +2,7 @@ import { GithubIcon, LinkedInIcon, TwitterIcon } from "@/icons";
 import { Footer } from "types";
 
 const footer: Footer = {
-  copyright: "2023 Tyler. All rights reserved. No Cookies.",
+  copyright: "2024 Tyler. All rights reserved. No Cookies.",
   socials: [
     {
       name: "Twitter",
