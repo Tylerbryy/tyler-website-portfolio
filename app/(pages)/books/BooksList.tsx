@@ -1,4 +1,4 @@
-import React, { useCallback } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import Image from 'next/image';
 
 // TypeScript interfaces for props
@@ -28,33 +28,39 @@ const BooksList: React.FC<{ booksData: BooksData }> = ({ booksData }) => {
           {sectionTitle}
         </h2>
         <div className="grid gap-8 px-5 sm:grid-cols-1 md:grid-cols-3 md:px-0">
-          {books.map(book => <BookCard key={book.book_id} book={book} />)}
+          {books.map(book => (
+            <BookCard key={book.book_id} book={book} />
+          ))}
         </div>
       </section>
     );
   }, []);
 
+  const sectionData = useMemo(
+    () => [
+      { title: "Books I've Read", data: booksData.read },
+      { title: "Books I'm Currently Reading", data: booksData['currently-reading'] },
+      { title: "Books I Want to Read", data: booksData['to-read'] },
+    ],
+    [booksData]
+  );
+
   return (
     <>
-      {renderBookSection("Books I've Read", booksData.read)}
-      {renderBookSection("Books I'm Currently Reading", booksData['currently-reading'])}
-      {renderBookSection("Books I Want to Read", booksData['to-read'])}
+      {sectionData.map(({ title, data }) => renderBookSection(title, data))}
     </>
   );
 };
 
 const BookCard: React.FC<{ book: Book }> = ({ book }) => {
+  const coverUrl = useMemo(() => book.isbn ? getCoverUrl(book.isbn) : undefined, [book.isbn]);
+
   return (
     <div className="block rounded-xl bg-white p-8 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-md dark:bg-slate-700/50 dark:shadow-white/5 dark:ring-white/10">
-      {book.isbn ? (
-        <a
-          href={`https://openlibrary.org/isbn/${book.isbn}`}
-          aria-label={book.title}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      {coverUrl && (
+        <a href={`https://openlibrary.org/isbn/${book.isbn}`} aria-label={book.title} target="_blank" rel="noopener noreferrer">
           <Image
-            src={getCoverUrl(book.isbn)}
+            src={coverUrl}
             alt={`Cover of ${book.title}`}
             layout="intrinsic"
             className="rounded-t-lg"
@@ -63,15 +69,9 @@ const BookCard: React.FC<{ book: Book }> = ({ book }) => {
             loading="lazy"
           />
         </a>
-      ) : (
-        <p>No book cover available</p>
       )}
-      <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300 mt-4">
-        {book.title}
-      </h3>
-      <p className="text-sm text-slate-500 dark:text-slate-400">
-        {book.author}
-      </p>
+      <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300 mt-4">{book.title}</h3>
+      <p className="text-sm text-slate-500 dark:text-slate-400">{book.author}</p>
     </div>
   );
 };
