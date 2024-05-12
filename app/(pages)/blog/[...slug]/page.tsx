@@ -23,35 +23,25 @@ async function getPostFromParams(params: { slug: string[] }) {
   return post;
 }
 
-export async function generateMetadata({
-  params,
-}: PostPageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: PostPageProps): Promise<Metadata> {
   const post = await getPostFromParams(params);
-
   if (!post) {
     return {};
   }
 
+  const ogImageUrl = post.image;
+
   return {
     title: post.title,
     description: post.description,
-    authors: {
-      name: post.author?.name,
-      url: post.author?.twitter,
-    },
     openGraph: {
-      title: post.title,
-      description: post.description,
       type: "article",
       url: `${getUrl()}/blog/${post.slug}`,
+      title: post.title,
+      description: post.description,
       images: [
         {
-          url: constructOgImageUri(
-            post.description,
-            post.title,
-            post.tags,
-            post.slug,
-          ),
+          url: ogImageUrl,
           width: 1200,
           height: 630,
           alt: post.title,
@@ -62,9 +52,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: [
-        constructOgImageUri(post.description, post.title, post.tags, post.slug),
-      ],
+      images: [ogImageUrl],
     },
   };
 }
