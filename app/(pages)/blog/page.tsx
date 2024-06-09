@@ -12,7 +12,7 @@ import {
 } from "@heroicons/react/24/outline";
 import { allPages, allPosts } from "contentlayer/generated";
 import { compareDesc } from "date-fns";
-import { Metadata } from "next";
+import { Metadata, Viewport } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import Balancer from "react-wrap-balancer";
@@ -50,6 +50,11 @@ export const metadata: Metadata = {
     ],
     creator: metaData.author.twitterAddress,
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 const BlogPage = async () => {
@@ -126,7 +131,7 @@ const BlogPage = async () => {
                             <span className="ml-1.5">
                               {post.readingTime.text}
                             </span>
-                          </div>
+                            </div>
                         </div>
                       </div>
                     </Link>

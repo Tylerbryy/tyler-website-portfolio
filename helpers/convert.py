@@ -3,7 +3,7 @@ import json
 
 # Read the CSV file and parse the data
 books = {'read': [], 'currently-reading': [], 'to-read': []}
-with open('goodreads_library_export.csv', mode='r', encoding='utf-8') as csvfile:
+with open(r'helpers\goodreads_library_export.csv', mode='r', encoding='utf-8') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         shelf = row['Exclusive Shelf'].lower().replace(' ', '-')

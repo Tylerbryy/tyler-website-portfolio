@@ -1,15 +1,21 @@
-import { FC } from "react"
-import Image, { ImageProps } from "next/image"
-import { cn } from "@/lib/utils"
-import { useMDXComponent } from "next-contentlayer/hooks"
+import { FC } from "react";
+import Image, { ImageProps } from "next/image";
+import { cn } from "@/lib/utils";
+import { useMDXComponent } from "next-contentlayer/hooks";
+import { shimmer, toBase64 } from "@/lib/utils"; // Add this line
 
 type Props = {
-  className?: string
-}
+  className?: string;
+};
 
 const components = {
-  // Image,
-  Image: (props: ImageProps) => <Image {...props} />,
+  Image: (props: ImageProps) => (
+    <Image
+      {...props}
+      placeholder="blur"
+      blurDataURL={`data:image/svg+xml;base64,${toBase64(shimmer(700, 475))}`}
+    />
+  ),
   h1: ({ className, ...props }: Props) => (
     <h1
       className={cn(
@@ -153,14 +159,14 @@ const components = {
       {...props}
     />
   ),
-}
+};
 
 interface MdxProps {
-  code: string
+  code: string;
 }
 
 const Mdx: FC<MdxProps> = ({ code }) => {
-  const Component = useMDXComponent(code)
+  const Component = useMDXComponent(code);
 
   return (
     <>
@@ -169,7 +175,7 @@ const Mdx: FC<MdxProps> = ({ code }) => {
         <Component components={components} />
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Mdx
+export default Mdx;
