@@ -1,0 +1,935 @@
+{
+    "read": [
+        {
+            "title": "When the Heavens Went on Sale: The Misfits and Geniuses Racing to Put Space Within Reach",
+            "author": "Ashlee Vance",
+            "rating": "4",
+            "year_published": "2023",
+            "read_count": "1",
+            "book_id": "62050244",
+            "date_read": "2024/05/30"
+        },
+        {
+            "title": "Ready Player One (Ready Player One, #1)",
+            "author": "Ernest Cline",
+            "rating": "5",
+            "year_published": "2011",
+            "read_count": "1",
+            "book_id": "9969571",
+            "date_read": "2024/05/14"
+        },
+        {
+            "title": "\"Surely You're Joking, Mr. Feynman!\": Adventures of a Curious Character",
+            "author": "Richard P. Feynman",
+            "rating": "5",
+            "year_published": "2018",
+            "read_count": "1",
+            "book_id": "35167685",
+            "date_read": "2024/04/29"
+        },
+        {
+            "title": "Dune Messiah (Dune, #2)",
+            "author": "Frank Herbert",
+            "rating": "4",
+            "year_published": "2019",
+            "read_count": "1",
+            "book_id": "44492285",
+            "date_read": "2024/04/09"
+        },
+        {
+            "title": "Lord of the Flies",
+            "author": "William Golding",
+            "rating": "3",
+            "year_published": "1999",
+            "read_count": "1",
+            "book_id": "7624",
+            "date_read": "2024/03/28"
+        },
+        {
+            "title": "The Three-Body Problem (Remembrance of Earth’s Past, #1)",
+            "author": "Liu Cixin",
+            "rating": "0",
+            "year_published": "2014",
+            "read_count": "1",
+            "book_id": "20518872",
+            "date_read": "2024/03/27"
+        },
+        {
+            "title": "A Brief History of Intelligence: Evolution, AI, and the Five Breakthroughs That Made Our Brains",
+            "author": "Max Solomon Bennett",
+            "rating": "5",
+            "year_published": "2023",
+            "read_count": "1",
+            "book_id": "62050269",
+            "date_read": "2024/03/21"
+        },
+        {
+            "title": "The Machine Stops",
+            "author": "E.M. Forster",
+            "rating": "5",
+            "year_published": "2008",
+            "read_count": "1",
+            "book_id": "4711854",
+            "date_read": ""
+        },
+        {
+            "title": "The Lean Startup",
+            "author": "Eric Ries",
+            "rating": "4",
+            "year_published": "2011",
+            "read_count": "1",
+            "book_id": "10127019",
+            "date_read": "2024/03/03"
+        },
+        {
+            "title": "Red Rising (Red Rising Saga, #1)",
+            "author": "Pierce Brown",
+            "rating": "4",
+            "year_published": "2014",
+            "read_count": "1",
+            "book_id": "15839976",
+            "date_read": "2024/03/01"
+        },
+        {
+            "title": "Project Hail Mary",
+            "author": "Andy Weir",
+            "rating": "5",
+            "year_published": "2021",
+            "read_count": "1",
+            "book_id": "54493401",
+            "date_read": "2024/02/15"
+        },
+        {
+            "title": "The Innovators: How a Group of Hackers, Geniuses and Geeks Created the Digital Revolution",
+            "author": "Walter Isaacson",
+            "rating": "5",
+            "year_published": "2014",
+            "read_count": "1",
+            "book_id": "21856367",
+            "date_read": "2024/01/23"
+        },
+        {
+            "title": "The Ballad of Songbirds and Snakes (The Hunger Games, #0)",
+            "author": "Suzanne Collins",
+            "rating": "4",
+            "year_published": "2020",
+            "read_count": "1",
+            "book_id": "51901147",
+            "date_read": "2024/01/05"
+        },
+        {
+            "title": "Mockingjay (The Hunger Games, #3)",
+            "author": "Suzanne Collins",
+            "rating": "4",
+            "year_published": "2010",
+            "read_count": "1",
+            "book_id": "7260188",
+            "date_read": "2023/12/25"
+        },
+        {
+            "title": "Superintelligence: Paths, Dangers, Strategies",
+            "author": "Nick Bostrom",
+            "rating": "3",
+            "year_published": "2014",
+            "read_count": "1",
+            "book_id": "20527133",
+            "date_read": "2023/12/18"
+        },
+        {
+            "title": "Catching Fire (The Hunger Games, #2)",
+            "author": "Suzanne Collins",
+            "rating": "5",
+            "year_published": "2009",
+            "read_count": "1",
+            "book_id": "6148028",
+            "date_read": "2023/12/08"
+        },
+        {
+            "title": "A Beautiful Mind",
+            "author": "Sylvia Nasar",
+            "rating": "4",
+            "year_published": "1999",
+            "read_count": "1",
+            "book_id": "13912",
+            "date_read": ""
+        },
+        {
+            "title": "The Hunger Games (The Hunger Games, #1)",
+            "author": "Suzanne Collins",
+            "rating": "5",
+            "year_published": "2008",
+            "read_count": "1",
+            "book_id": "2767052",
+            "date_read": "2023/11/09"
+        },
+        {
+            "title": "I, Robot",
+            "author": "Isaac Asimov",
+            "rating": "0",
+            "year_published": "2004",
+            "read_count": "1",
+            "book_id": "55001095",
+            "date_read": "2023/10/29"
+        },
+        {
+            "title": "The Selfish Gene",
+            "author": "Richard Dawkins",
+            "rating": "0",
+            "year_published": "2016",
+            "read_count": "1",
+            "book_id": "29807115",
+            "date_read": ""
+        },
+        {
+            "title": "The Hitchhiker's Guide to the Galaxy (Hitchhiker's Guide to the Galaxy, #1)",
+            "author": "Douglas Adams",
+            "rating": "5",
+            "year_published": "2004",
+            "read_count": "1",
+            "book_id": "14",
+            "date_read": "2023/10/08"
+        },
+        {
+            "title": "Elon Musk",
+            "author": "Walter Isaacson",
+            "rating": "5",
+            "year_published": "2023",
+            "read_count": "1",
+            "book_id": "122765395",
+            "date_read": "2023/10/01"
+        },
+        {
+            "title": "Stories of Your Life and Others",
+            "author": "Ted Chiang",
+            "rating": "0",
+            "year_published": "2010",
+            "read_count": "1",
+            "book_id": "223380",
+            "date_read": ""
+        },
+        {
+            "title": "Animal Farm",
+            "author": "George Orwell",
+            "rating": "5",
+            "year_published": "1996",
+            "read_count": "2",
+            "book_id": "170448",
+            "date_read": "2023/09/04"
+        },
+        {
+            "title": "Homo Deus: A History of Tomorrow",
+            "author": "Yuval Noah Harari",
+            "rating": "5",
+            "year_published": "2017",
+            "read_count": "1",
+            "book_id": "31138556",
+            "date_read": "2023/08/28"
+        },
+        {
+            "title": "Einstein: His Life and Universe",
+            "author": "Walter Isaacson",
+            "rating": "5",
+            "year_published": "2007",
+            "read_count": "1",
+            "book_id": "6602781",
+            "date_read": "2023/08/12"
+        },
+        {
+            "title": "The Martian",
+            "author": "Andy Weir",
+            "rating": "5",
+            "year_published": "2014",
+            "read_count": "1",
+            "book_id": "18007564",
+            "date_read": "2023/08/08"
+        },
+        {
+            "title": "Ender’s Game (Ender's Saga, #1)",
+            "author": "Orson Scott Card",
+            "rating": "3",
+            "year_published": "2004",
+            "read_count": "1",
+            "book_id": "375802",
+            "date_read": "2023/08/06"
+        },
+        {
+            "title": "The Stranger",
+            "author": "Albert Camus",
+            "rating": "5",
+            "year_published": "1989",
+            "read_count": "1",
+            "book_id": "49552",
+            "date_read": "2023/08/01"
+        },
+        {
+            "title": "Life 3.0: Being Human in the Age of Artificial Intelligence",
+            "author": "Max Tegmark",
+            "rating": "5",
+            "year_published": "2017",
+            "read_count": "1",
+            "book_id": "34272565",
+            "date_read": "2023/06/01"
+        },
+        {
+            "title": "The Fellowship of the Ring (The Lord of the Rings, #1)",
+            "author": "J.R.R. Tolkien",
+            "rating": "5",
+            "year_published": "2022",
+            "read_count": "1",
+            "book_id": "61215351",
+            "date_read": "2023/08/01"
+        },
+        {
+            "title": "Dune (Dune, #1)",
+            "author": "Frank Herbert",
+            "rating": "5",
+            "year_published": "2019",
+            "read_count": "1",
+            "book_id": "44767458",
+            "date_read": "2023/07/17"
+        },
+        {
+            "title": "Fahrenheit 451",
+            "author": "Ray Bradbury",
+            "rating": "5",
+            "year_published": "2011",
+            "read_count": "2",
+            "book_id": "13079982",
+            "date_read": "2023/06/28"
+        },
+        {
+            "title": "The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory",
+            "author": "Brian Greene",
+            "rating": "5",
+            "year_published": "2010",
+            "read_count": "1",
+            "book_id": "8049273",
+            "date_read": "2023/07/24"
+        },
+        {
+            "title": "The Pragmatic Programmer: From Journeyman to Master",
+            "author": "Andy Hunt",
+            "rating": "5",
+            "year_published": "1999",
+            "read_count": "1",
+            "book_id": "4099",
+            "date_read": "2023/07/19"
+        },
+        {
+            "title": "Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future",
+            "author": "Ashlee Vance",
+            "rating": "4",
+            "year_published": "2015",
+            "read_count": "1",
+            "book_id": "25541028",
+            "date_read": "2023/07/17"
+        },
+        {
+            "title": "The Queen's Gambit",
+            "author": "Walter Tevis",
+            "rating": "5",
+            "year_published": "2003",
+            "read_count": "1",
+            "book_id": "62022",
+            "date_read": "2023/06/04"
+        },
+        {
+            "title": "Meditations: A New Translation",
+            "author": "Marcus Aurelius",
+            "rating": "5",
+            "year_published": "2021",
+            "read_count": "1",
+            "book_id": "61354484",
+            "date_read": "2023/06/26"
+        },
+        {
+            "title": "Brave New World",
+            "author": "Aldous Huxley",
+            "rating": "5",
+            "year_published": "1998",
+            "read_count": "1",
+            "book_id": "5129",
+            "date_read": "2023/02/22"
+        },
+        {
+            "title": "Steve Jobs",
+            "author": "Walter Isaacson",
+            "rating": "5",
+            "year_published": "2011",
+            "read_count": "1",
+            "book_id": "11084145",
+            "date_read": "2023/07/09"
+        },
+        {
+            "title": "Think and Grow Rich",
+            "author": "Napoleon Hill",
+            "rating": "1",
+            "year_published": "2016",
+            "read_count": "1",
+            "book_id": "30186948",
+            "date_read": ""
+        },
+        {
+            "title": "Made to Stick: Why Some Ideas Survive and Others Die",
+            "author": "Chip Heath",
+            "rating": "3",
+            "year_published": "2007",
+            "read_count": "1",
+            "book_id": "69242",
+            "date_read": ""
+        },
+        {
+            "title": "The $100 Startup: Reinvent the Way You Make a Living, Do What You Love, and Create a New Future",
+            "author": "Chris Guillebeau",
+            "rating": "2",
+            "year_published": "2012",
+            "read_count": "1",
+            "book_id": "12605157",
+            "date_read": ""
+        },
+        {
+            "title": "Rich Dad, Poor Dad",
+            "author": "Robert T. Kiyosaki",
+            "rating": "3",
+            "year_published": "2001",
+            "read_count": "1",
+            "book_id": "69571",
+            "date_read": ""
+        },
+        {
+            "title": "The 48 Laws of Power",
+            "author": "Robert Greene",
+            "rating": "4",
+            "year_published": "2000",
+            "read_count": "1",
+            "book_id": "1303",
+            "date_read": ""
+        },
+        {
+            "title": "How to Win Friends and Influence People",
+            "author": "Dale Carnegie",
+            "rating": "3",
+            "year_published": "1998",
+            "read_count": "1",
+            "book_id": "4865",
+            "date_read": ""
+        },
+        {
+            "title": "Mastery",
+            "author": "Robert Greene",
+            "rating": "5",
+            "year_published": "2012",
+            "read_count": "1",
+            "book_id": "13589182",
+            "date_read": "2023/06/23"
+        },
+        {
+            "title": "Sapiens: A Brief History of Humankind",
+            "author": "Yuval Noah Harari",
+            "rating": "5",
+            "year_published": "2015",
+            "read_count": "2",
+            "book_id": "23692271",
+            "date_read": "2023/05/15"
+        },
+        {
+            "title": "Master Your Emotions: A Practical Guide to Overcome Negativity and Better Manage Your Feelings (Mastery Series Book 1)",
+            "author": "Thibaut Meurisse",
+            "rating": "4",
+            "year_published": "2018",
+            "read_count": "1",
+            "book_id": "40078926",
+            "date_read": ""
+        },
+        {
+            "title": "The Almanack of Naval Ravikant: A Guide to Wealth and Happiness",
+            "author": "Eric Jorgenson",
+            "rating": "5",
+            "year_published": "2020",
+            "read_count": "1",
+            "book_id": "54898389",
+            "date_read": "2023/01/14"
+        },
+        {
+            "title": "12 Rules for Life: An Antidote to Chaos",
+            "author": "Jordan B. Peterson",
+            "rating": "5",
+            "year_published": "2018",
+            "read_count": "1",
+            "book_id": "30257963",
+            "date_read": ""
+        },
+        {
+            "title": "Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones",
+            "author": "James Clear",
+            "rating": "5",
+            "year_published": "2018",
+            "read_count": "1",
+            "book_id": "40121378",
+            "date_read": ""
+        },
+        {
+            "title": "Outliers: The Story of Success",
+            "author": "Malcolm Gladwell",
+            "rating": "5",
+            "year_published": "2008",
+            "read_count": "1",
+            "book_id": "3228917",
+            "date_read": ""
+        },
+        {
+            "title": "Can't Hurt Me: Master Your Mind and Defy the Odds",
+            "author": "David Goggins",
+            "rating": "5",
+            "year_published": "2018",
+            "read_count": "1",
+            "book_id": "41721428",
+            "date_read": ""
+        },
+        {
+            "title": "Contagious: Why Things Catch On",
+            "author": "Jonah Berger",
+            "rating": "2",
+            "year_published": "2013",
+            "read_count": "1",
+            "book_id": "15801967",
+            "date_read": ""
+        },
+        {
+            "title": "The Way of the Superior Man: A Spiritual Guide to Mastering the Challenges of Women, Work, and Sexual Desire",
+            "author": "David Deida",
+            "rating": "5",
+            "year_published": "2004",
+            "read_count": "1",
+            "book_id": "79424",
+            "date_read": ""
+        },
+        {
+            "title": "The Psychology of Money",
+            "author": "Morgan Housel",
+            "rating": "3",
+            "year_published": "2020",
+            "read_count": "1",
+            "book_id": "41881472",
+            "date_read": ""
+        },
+        {
+            "title": "The Art of War",
+            "author": "Sun Tzu",
+            "rating": "5",
+            "year_published": "2005",
+            "read_count": "1",
+            "book_id": "10534",
+            "date_read": "2023/04/06"
+        },
+        {
+            "title": "Meditations",
+            "author": "Marcus Aurelius",
+            "rating": "5",
+            "year_published": "2006",
+            "read_count": "1",
+            "book_id": "30659",
+            "date_read": ""
+        }
+    ],
+    "currently-reading": [
+        {
+            "title": "Thinking, Fast and Slow",
+            "author": "Daniel Kahneman",
+            "rating": "0",
+            "year_published": "2011",
+            "read_count": "1",
+            "book_id": "11468377",
+            "date_read": ""
+        },
+        {
+            "title": "The Singularity is Near: When Humans Transcend Biology",
+            "author": "Ray Kurzweil",
+            "rating": "0",
+            "year_published": "2006",
+            "read_count": "1",
+            "book_id": "83518",
+            "date_read": ""
+        },
+        {
+            "title": "Benjamin Franklin: An American Life",
+            "author": "Walter Isaacson",
+            "rating": "0",
+            "year_published": "2004",
+            "read_count": "1",
+            "book_id": "10883",
+            "date_read": ""
+        },
+        {
+            "title": "Code: The Hidden Language of Computer Hardware and Software",
+            "author": "Charles Petzold",
+            "rating": "0",
+            "year_published": "2000",
+            "read_count": "1",
+            "book_id": "44882",
+            "date_read": ""
+        }
+    ],
+    "to-read": [
+        {
+            "title": "Pale Blue Dot: A Vision of the Human Future in Space",
+            "author": "Carl Sagan",
+            "rating": "0",
+            "year_published": "1997",
+            "read_count": "0",
+            "book_id": "61663",
+            "date_read": ""
+        },
+        {
+            "title": "What If? Serious Scientific Answers to Absurd Hypothetical Questions",
+            "author": "Randall Munroe",
+            "rating": "0",
+            "year_published": "2014",
+            "read_count": "0",
+            "book_id": "21413662",
+            "date_read": ""
+        },
+        {
+            "title": "An Astronaut's Guide to Life on Earth",
+            "author": "Chris Hadfield",
+            "rating": "0",
+            "year_published": "2013",
+            "read_count": "0",
+            "book_id": "18170143",
+            "date_read": ""
+        },
+        {
+            "title": "An Immense World: How Animal Senses Reveal the Hidden Realms Around Us",
+            "author": "Ed Yong",
+            "rating": "0",
+            "year_published": "2022",
+            "read_count": "0",
+            "book_id": "59575939",
+            "date_read": ""
+        },
+        {
+            "title": "Seven Brief Lessons on Physics",
+            "author": "Carlo Rovelli",
+            "rating": "0",
+            "year_published": "2016",
+            "read_count": "0",
+            "book_id": "25734172",
+            "date_read": ""
+        },
+        {
+            "title": "The Picture of Dorian Gray",
+            "author": "Oscar Wilde",
+            "rating": "0",
+            "year_published": "2004",
+            "read_count": "0",
+            "book_id": "5297",
+            "date_read": ""
+        },
+        {
+            "title": "Dark Matter",
+            "author": "Blake Crouch",
+            "rating": "0",
+            "year_published": "2016",
+            "read_count": "0",
+            "book_id": "27833670",
+            "date_read": ""
+        },
+        {
+            "title": "Chip War: The Fight for the World's Most Critical Technology",
+            "author": "Chris   Miller",
+            "rating": "0",
+            "year_published": "2022",
+            "read_count": "0",
+            "book_id": "60321447",
+            "date_read": ""
+        },
+        {
+            "title": "The Art of Doing Science and Engineering: Learning to Learn",
+            "author": "Richard W. Hamming",
+            "rating": "0",
+            "year_published": "2020",
+            "read_count": "0",
+            "book_id": "53349431",
+            "date_read": ""
+        },
+        {
+            "title": "Gödel, Escher, Bach: An Eternal Golden Braid",
+            "author": "Douglas R. Hofstadter",
+            "rating": "0",
+            "year_published": "1999",
+            "read_count": "0",
+            "book_id": "24113",
+            "date_read": ""
+        },
+        {
+            "title": "Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T. Munger",
+            "author": "Charles T. Munger",
+            "rating": "0",
+            "year_published": "2023",
+            "read_count": "0",
+            "book_id": "157686100",
+            "date_read": ""
+        },
+        {
+            "title": "The Feynman Lectures on Physics",
+            "author": "Richard P. Feynman",
+            "rating": "0",
+            "year_published": "2011",
+            "read_count": "0",
+            "book_id": "10091482",
+            "date_read": ""
+        },
+        {
+            "title": "All Systems Red (The Murderbot Diaries, #1)",
+            "author": "Martha Wells",
+            "rating": "0",
+            "year_published": "2017",
+            "read_count": "0",
+            "book_id": "33387769",
+            "date_read": ""
+        },
+        {
+            "title": "It",
+            "author": "Stephen King",
+            "rating": "0",
+            "year_published": "1987",
+            "read_count": "0",
+            "book_id": "830502",
+            "date_read": ""
+        },
+        {
+            "title": "Linear Algebra Done Right (Undergraduate Texts in Mathematics)",
+            "author": "Sheldon Axler",
+            "rating": "0",
+            "year_published": "2004",
+            "read_count": "0",
+            "book_id": "309768",
+            "date_read": ""
+        },
+        {
+            "title": "Artemis",
+            "author": "Andy Weir",
+            "rating": "0",
+            "year_published": "2017",
+            "read_count": "0",
+            "book_id": "34928122",
+            "date_read": ""
+        },
+        {
+            "title": "The Black Swan: The Impact of the Highly Improbable",
+            "author": "Nassim Nicholas Taleb",
+            "rating": "0",
+            "year_published": "2007",
+            "read_count": "0",
+            "book_id": "242472",
+            "date_read": ""
+        },
+        {
+            "title": "Flowers for Algernon",
+            "author": "Daniel Keyes",
+            "rating": "0",
+            "year_published": "2005",
+            "read_count": "0",
+            "book_id": "18373",
+            "date_read": ""
+        },
+        {
+            "title": "The Odyssey",
+            "author": "Homer",
+            "rating": "0",
+            "year_published": "2006",
+            "read_count": "0",
+            "book_id": "1381",
+            "date_read": ""
+        },
+        {
+            "title": "All the Light We Cannot See",
+            "author": "Anthony Doerr",
+            "rating": "0",
+            "year_published": "2014",
+            "read_count": "0",
+            "book_id": "18143977",
+            "date_read": ""
+        },
+        {
+            "title": "Frankenstein: The 1818 Text",
+            "author": "Mary Wollstonecraft Shelley",
+            "rating": "0",
+            "year_published": "2018",
+            "read_count": "0",
+            "book_id": "35031085",
+            "date_read": ""
+        },
+        {
+            "title": "American Prometheus: The Triumph and Tragedy of J. Robert Oppenheimer",
+            "author": "Kai Bird",
+            "rating": "0",
+            "year_published": "2007",
+            "read_count": "0",
+            "book_id": "80571",
+            "date_read": ""
+        },
+        {
+            "title": "Guns, Germs, and Steel: The Fates of Human Societies",
+            "author": "Jared Diamond",
+            "rating": "0",
+            "year_published": "2005",
+            "read_count": "0",
+            "book_id": "1842",
+            "date_read": ""
+        },
+        {
+            "title": "Snow Crash",
+            "author": "Neal Stephenson",
+            "rating": "0",
+            "year_published": "2018",
+            "read_count": "0",
+            "book_id": "40651883",
+            "date_read": ""
+        },
+        {
+            "title": "The Plague",
+            "author": "Albert Camus",
+            "rating": "0",
+            "year_published": "1991",
+            "read_count": "0",
+            "book_id": "11989",
+            "date_read": ""
+        },
+        {
+            "title": "The Great Gatsby",
+            "author": "F. Scott Fitzgerald",
+            "rating": "0",
+            "year_published": "1925",
+            "read_count": "0",
+            "book_id": "4671",
+            "date_read": ""
+        },
+        {
+            "title": "The Mythical Man-Month: Essays on Software Engineering",
+            "author": "Frederick P. Brooks Jr.",
+            "rating": "0",
+            "year_published": "1995",
+            "read_count": "0",
+            "book_id": "13629",
+            "date_read": ""
+        },
+        {
+            "title": "Structures: Or Why Things Don't Fall Down",
+            "author": "J.E. Gordon",
+            "rating": "0",
+            "year_published": "2003",
+            "read_count": "0",
+            "book_id": "245344",
+            "date_read": ""
+        },
+        {
+            "title": "The Origin of Species",
+            "author": "Charles Darwin",
+            "rating": "0",
+            "year_published": "2004",
+            "read_count": "0",
+            "book_id": "22463",
+            "date_read": ""
+        },
+        {
+            "title": "Cosmos",
+            "author": "Carl Sagan",
+            "rating": "0",
+            "year_published": "2002",
+            "read_count": "0",
+            "book_id": "55030",
+            "date_read": ""
+        },
+        {
+            "title": "Discourses and Selected Writings",
+            "author": "Epictetus",
+            "rating": "0",
+            "year_published": "2008",
+            "read_count": "0",
+            "book_id": "4143812",
+            "date_read": ""
+        },
+        {
+            "title": "The Republic",
+            "author": "Plato",
+            "rating": "0",
+            "year_published": "2003",
+            "read_count": "0",
+            "book_id": "30289",
+            "date_read": ""
+        },
+        {
+            "title": "To Kill a Mockingbird",
+            "author": "Harper Lee",
+            "rating": "0",
+            "year_published": "2006",
+            "read_count": "0",
+            "book_id": "2657",
+            "date_read": ""
+        },
+        {
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "rating": "0",
+            "year_published": "",
+            "read_count": "0",
+            "book_id": "23463279",
+            "date_read": ""
+        },
+        {
+            "title": "Clean Code: A Handbook of Agile Software Craftsmanship",
+            "author": "Robert C. Martin",
+            "rating": "0",
+            "year_published": "2008",
+            "read_count": "0",
+            "book_id": "3735293",
+            "date_read": ""
+        },
+        {
+            "title": "The Structure of Scientific Revolutions: 50th Anniversary Edition",
+            "author": "Thomas S. Kuhn",
+            "rating": "0",
+            "year_published": "2012",
+            "read_count": "0",
+            "book_id": "73769604",
+            "date_read": ""
+        },
+        {
+            "title": "The Wealth of Nations, Books 1-3",
+            "author": "Adam Smith",
+            "rating": "0",
+            "year_published": "1982",
+            "read_count": "0",
+            "book_id": "115596",
+            "date_read": ""
+        },
+        {
+            "title": "Zero to One: Notes on Startups, or How to Build the Future",
+            "author": "Peter Thiel",
+            "rating": "0",
+            "year_published": "2014",
+            "read_count": "0",
+            "book_id": "18050143",
+            "date_read": ""
+        },
+        {
+            "title": "The Big Picture: On the Origins of Life, Meaning, and the Universe Itself",
+            "author": "Sean Carroll",
+            "rating": "0",
+            "year_published": "2016",
+            "read_count": "0",
+            "book_id": "26150770",
+            "date_read": ""
+        },
+        {
+            "title": "Nineteen Eighty-Four",
+            "author": "George Orwell",
+            "rating": "0",
+            "year_published": "2003",
+            "read_count": "0",
+            "book_id": "5471",
+            "date_read": ""
+        }
+    ]
+}

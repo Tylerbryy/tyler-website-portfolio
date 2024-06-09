@@ -1,12 +1,11 @@
-import React, { useCallback, useMemo } from 'react';
-import Image from 'next/image';
+import React, { useMemo } from 'react';
 
 // TypeScript interfaces for props
 interface Book {
   title: string;
-  isbn?: string;
   book_id: string;
   author: string;
+  date_read?: string; // Optional since not all books will have it
 }
 
 interface BooksData {
@@ -15,64 +14,54 @@ interface BooksData {
   'to-read': Book[];
 }
 
-const getCoverUrl = (isbn: string, size: 'S' | 'M' | 'L' = 'L'): string =>
-  `https://covers.openlibrary.org/b/isbn/${isbn}-${size}.jpg?default=false`;
-
 const BooksList: React.FC<{ booksData: BooksData }> = ({ booksData }) => {
-  const renderBookSection = useCallback((sectionTitle: string, books: Book[]) => {
-    const sectionId = sectionTitle.replace(/\s+/g, '-').toLowerCase();
-
-    return (
-      <section aria-labelledby={`${sectionId}-heading`}>
-        <h2 id={`${sectionId}-heading`} className="text-xl font-bold my-4">
-          {sectionTitle}
-        </h2>
-        <div className="grid gap-8 px-5 sm:grid-cols-1 md:grid-cols-3 md:px-0">
-          {books.map(book => (
-            <BookCard key={book.book_id} book={book} />
-          ))}
-        </div>
-      </section>
-    );
-  }, []);
-
-  const sectionData = useMemo(
-    () => [
-      { title: "Books I've Read", data: booksData.read },
-      { title: "Books I'm Currently Reading", data: booksData['currently-reading'] },
-      { title: "Books I Want to Read", data: booksData['to-read'] },
-    ],
-    [booksData]
-  );
+  const sectionData = useMemo(() => [
+    {
+      title: "Books I've Read",
+      data: booksData.read.sort((a, b) => {
+        if (!a.date_read && !b.date_read) return 0;  // Both dates are missing, keep order unchanged
+        if (!a.date_read) return 1;                 // a has no date, sort it to the bottom
+        if (!b.date_read) return -1;                // b has no date, sort it to the bottom
+        return b.date_read.localeCompare(a.date_read); // Compare dates in descending order
+      })
+    },
+    { title: "Books I'm Currently Reading", data: booksData['currently-reading'] },
+    { title: "Books I Want to Read", data: booksData['to-read'] },
+  ], [booksData]);
 
   return (
     <>
-      {sectionData.map(({ title, data }) => renderBookSection(title, data))}
+      {sectionData.map(({ title, data }) => (
+        <section key={title}>
+          <h2 className="text-lg font-bold my-4">{title}</h2>
+          <ul>
+            {data.map(book => (
+              <BookCard key={book.book_id} book={book} />
+            ))}
+          </ul>
+        </section>
+      ))}
     </>
   );
 };
 
 const BookCard: React.FC<{ book: Book }> = ({ book }) => {
-  const coverUrl = useMemo(() => book.isbn ? getCoverUrl(book.isbn) : undefined, [book.isbn]);
+  const goodreadsUrl = `https://www.goodreads.com/book/show/${book.book_id}`;
 
   return (
-    <div className="block rounded-xl bg-white p-8 shadow-sm ring-1 ring-black/5 transition-all hover:-translate-y-1 hover:shadow-md dark:bg-slate-700/50 dark:shadow-white/5 dark:ring-white/10">
-      {coverUrl && (
-        <a href={`https://openlibrary.org/isbn/${book.isbn}`} aria-label={book.title} target="_blank" rel="noopener noreferrer">
-          <Image
-            src={coverUrl}
-            alt={`Cover of ${book.title}`}
-            layout="intrinsic"
-            className="rounded-t-lg"
-            width={500}
-            height={500}
-            loading="lazy"
-          />
-        </a>
-      )}
-      <h3 className="text-base font-semibold text-slate-700 dark:text-slate-300 mt-4">{book.title}</h3>
-      <p className="text-sm text-slate-500 dark:text-slate-400">{book.author}</p>
-    </div>
+    <li className="py-2">
+      <div className="relative mx-auto max-w-3xl border-b border-l border-dashed border-slate-500/50 px-6 py-4 md:border-y">
+        <div className="flex justify-between items-center">
+          <div>
+            <a href={goodreadsUrl} target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:underline italic">
+              {book.title}
+            </a>
+            <p className="text-xs">{book.author}</p>
+          </div>
+          {book.date_read && <span className="text-xs ml-4 italic">{book.date_read}</span>}
+        </div>
+      </div>
+    </li>
   );
 };
 

@@ -14,7 +14,8 @@ with open(r'helpers\goodreads_library_export.csv', mode='r', encoding='utf-8') a
                 'rating': row['My Rating'],
                 'year_published': row['Year Published'],
                 'read_count': row['Read Count'],
-                'book_id':row['Book Id']
+                'book_id':row['Book Id'],
+                'date_read':row['Date Read']
             })
 
 # Convert the categorized books to JSON
