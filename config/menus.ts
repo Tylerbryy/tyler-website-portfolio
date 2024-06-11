@@ -3,7 +3,8 @@ import {
   PaperAirplaneIcon,
   Squares2X2Icon,
   UserCircleIcon,
-  BookOpenIcon
+  BookOpenIcon,
+  VideoCameraIcon 
 } from "@heroicons/react/24/outline";
 import { Menu } from "types";
 
@@ -37,6 +38,12 @@ const menus: Menu[] = [
     url: "/books",
     idx: 5,
     icon: BookOpenIcon,
+  },
+  {
+    title: "Videos",
+    url: "/videos",
+    idx: 6,
+    icon: VideoCameraIcon,
   },
 ];
 
