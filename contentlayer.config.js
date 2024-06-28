@@ -8,6 +8,8 @@ import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypePrettyCode from "rehype-pretty-code";
 import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
+import rehypeKatex from "rehype-katex"; // Import rehype-katex
+import remarkMath from "remark-math"; // Import remark-math
 
 /** @type {import('contentlayer/source-files').ComputedFields} */
 const computedFields = {
@@ -90,10 +92,6 @@ export const Page = defineDocumentType(() => ({
       type: "string",
     },
     socials: {
-      // Reference types are not embedded.
-      // Until this is fixed, we can use a simple list.
-      // type: "reference",
-      // of: Social,
       type: "list",
       of: { type: "string" },
     },
@@ -138,10 +136,6 @@ export const Post = defineDocumentType(() => ({
       of: Author,
     },
     tags: {
-      // Reference types are not embedded.
-      // Until this is fixed, we can use a simple list.
-      // type: "reference",
-      // of: Tags,
       type: "list",
       of: { type: "string" },
       required: true,
@@ -183,19 +177,11 @@ export const Project = defineDocumentType(() => ({
       required: true,
     },
     tags: {
-      // Reference types are not embedded.
-      // Until this is fixed, we can use a simple list.
-      // type: "reference",
-      // of: Tags,
       type: "list",
       of: { type: "string" },
       required: true,
     },
     features: {
-      // Reference types are not embedded.
-      // Until this is fixed, we can use a simple list.
-      // type: "reference",
-      // of: Features,
       type: "list",
       of: { type: "string" },
       required: true,
@@ -208,7 +194,7 @@ export default makeSource({
   contentDirPath: "./content",
   documentTypes: [Post, Page, Project, Social],
   mdx: {
-    remarkPlugins: [remarkGfm],
+    remarkPlugins: [remarkGfm, remarkMath], // Add remarkMath
     rehypePlugins: [
       rehypeSlug,
       [
@@ -216,8 +202,6 @@ export default makeSource({
         {
           theme: "github-dark",
           onVisitLine(node) {
-            // Prevent lines from collapsing in `display: grid` mode, and allow empty
-            // lines to be copy/pasted
             if (node.children.length === 0) {
               node.children = [{ type: "text", value: " " }];
             }
@@ -239,6 +223,7 @@ export default makeSource({
           },
         },
       ],
+      rehypeKatex, // Add this line
     ],
   },
 });
